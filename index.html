@@ -58,23 +58,8 @@
     ul li::before {
       content: "💅 ";
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
     .pricing {
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     table.pricing-table {
       width: 100%;
@@ -160,7 +145,38 @@
     <p>טיפוח ברמה אחרת – לק ג'ל, פדיקור, בנייה ועוד</p>
   </header>
 
-  <!-- תוכן קיים נשמר כמות שהוא -->
+  <section>
+    <h2>השירותים שאני מספקת</h2>
+    <ul>
+      <li>לק ג'ל (כולל חיזוקים)</li>
+      <li>פדיקור מקצועי</li>
+      <li>בנייה לציפורניים בכל הסגנונות</li>
+      <li>תיקונים וקישוטים ייחודיים</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <h2>מחירון</h2>
+    <table class="pricing-table">
+      <tr><th>שירות</th><th>מחיר</th></tr>
+      <tr><td>לק ג'ל</td><td>₪100</td></tr>
+      <tr><td>בנייה</td><td>₪180</td></tr>
+      <tr><td>פדיקור</td><td>₪80</td></tr>
+      <tr><td>קישוטים</td><td>₪20–₪40</td></tr>
+      <tr><td>תיקונים</td><td>₪60</td></tr>
+    </table>
+  </section>
+
+  <section class="contact-box">
+    <h2>אהבתן? צרו קשר לקביעת תור!</h2>
+    <form>
+      <input type="text" placeholder="שם מלא" required>
+      <input type="tel" placeholder="מספר טלפון" required>
+      <input type="datetime-local" required>
+      <button type="submit">שלחו הודעה</button>
+    </form>
+    <p style="margin-top: 1rem; font-size: 1rem;">פרטים: קריית גת, הרימון 1, קומת קרקע | טלפון: 058-4819680</p>
+  </section>
 
   <section class="map-container">
     <h2>📍 איך מגיעים אלינו?</h2>
