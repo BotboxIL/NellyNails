@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NellyNails">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NellyNails - טיפוח ברמה אחרת</title>
@@ -226,5 +231,12 @@
   <footer>
     &copy; כל הזכויות שמורות ל־NellyNails
   </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(reg) { console.log('Service worker registered ✔️', reg); })
+        .catch(function(err) { console.error('Service worker error ❌', err); });
+    }
+  </script>
 </body>
 </html>
