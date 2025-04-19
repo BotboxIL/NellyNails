@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NellyNails - טיפוח ברמה אחרת</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #e0ccff);
+      color: #4b0082;
+      direction: rtl;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #d63384;
+      margin: 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #800080;
+      border-bottom: 2px solid #dda0dd;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      font-size: 1.2rem;
+      padding: 0;
+      list-style: none;
+    }
+    ul li::before {
+      content: "💅 ";
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💅 NellyNails</h1>
+    <p>טיפוח ברמה אחרת – לק ג'ל, פדיקור, בנייה ועוד</p>
+  </header>
+
+  <section>
+    <h2>💜 השירותים שאנחנו נותנים</h2>
+    <p>השירותים שאנחנו נותנים מכילים מגוון רחב של אופציות להלן:</p>
+    <ul>
+      <li>לק ג'ל (כולל חיזוקים)</li>
+      <li>פדיקור מקצועי</li>
+      <li>בניית ציפורניים בכל הסגנונות</li>
+      <li>תיקונים וקישוטים ייחודיים</li>
+      <li>טיפולי ספא מפנקים לרגליים</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📸 גלריה</h2>
+    <div class="gallery">
+      <img src="nail1.jpg" alt="גלריה 1">
+      <img src="nail2.jpg" alt="גלריה 2">
+      <img src="nail3.jpg" alt="גלריה 3">
+      <img src="nail4.jpg" alt="גלריה 4">
+      <img src="nail5.jpg" alt="גלריה 5">
+    </div>
+  </section>
+
+  <section>
+    <h2>🕒 שעות פעילות</h2>
+    <p>
+      ימים א'–ה': 9:00–14:00 וגם 16:00–20:00<br>
+      ימי שישי: 10:00–13:00
+    </p>
+  </section>
+
+  <footer>
+    &copy; כל הזכויות שמורות ל־NellyNails
+  </footer>
+</body>
+</html>
