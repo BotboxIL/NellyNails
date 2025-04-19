@@ -92,6 +92,17 @@
       font-size: 1rem;
       color: #4b2b71;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
     .contact-box {
       background-color: #eee6f5;
       padding: 2rem;
@@ -185,6 +196,20 @@
     </table>
   </section>
 
+  <section>
+    <h2>לקוחות מרוצות</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="לקוח 1">
+      <img src="gallery2.jpg" alt="לקוח 2">
+      <img src="gallery3.jpg" alt="לקוח 3">
+      <img src="gallery4.jpg" alt="לקוח 4">
+      <img src="gallery5.jpg" alt="לקוח 5">
+      <img src="gallery6.jpg" alt="לקוח 6">
+      <img src="gallery7.jpg" alt="לקוח 7">
+      <img src="gallery8.jpg" alt="לקוח 8">
+    </div>
+  </section>
+
   <section class="contact-box">
     <h2>אהבתן? צרו קשר לקביעת תור!</h2>
     <form>
@@ -201,8 +226,10 @@
   </section>
 
   <section class="info">
+    <p><strong>פרטים:</strong></p>
     <p><strong>כתובת:</strong> קריית גת, הרימון 1, קומת קרקע</p>
     <p><strong>טלפון:</strong> 058-4819680</p>
+    <p><strong>שעות פעילות:</strong> ימים א׳-ה׳ 9:00–14:00, 16:00–20:00 | שישי 10:00–13:00</p>
   </section>
 
   <footer>
@@ -210,3 +237,4 @@
   </footer>
 </body>
 </html>
+
